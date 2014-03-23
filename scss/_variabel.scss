@@ -1,0 +1,13 @@
+$columns: 12; 
+$max-page-width: 1200; /* Even though we mean 1200 pixels, we leave out 'px' so that the mixing below can perform calculations on it. */ 
+$column-width: $max-page-width/$columns; 
+$column-padding: 1rem; 
+ 
+@mixin column(
+	$amount, 
+	$context: $max-page-width, 
+	$padding: $column-padding) { 
+		width: percentage(($column-width * $amount) / $max-page-width); 
+		padding: $padding; 
+} 
+

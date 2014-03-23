@@ -1,0 +1,164 @@
+body{
+	padding: 0;	
+	#wrapper{
+		@include column(12);
+		padding: 0;
+		
+				
+		
+		header{
+			background-color:black;
+			height:150px;
+			
+
+			
+			h1{
+			color:white;
+			padding: 20px 0 0 50px ;
+			font-size:3rem;
+			font-family: "proxima-nova",sans-serif;
+			
+			}
+			.menu{
+			width:100%;
+			margin-top:-60px;
+			margin-left:400px;
+			margin-bottom:0px;
+					ul{
+						list-style:none;
+						display:block;
+
+						li{
+							font-size: 25px;
+							//display: block;
+							margin: 0 25px;
+							display:inline;
+							
+							a{
+								width:480px;
+								text-decoration: none;
+								color: white;
+								&:hover{
+									background-color:black;
+									transition: all 1.2s ease;
+								}
+							}
+							
+
+							ul{
+								display:none;
+								//opacity: 0;
+								
+								li{
+									display: block;
+									margin: 0 10px;
+									border:none; 
+								}
+							}
+							&:hover{
+								//background: red;
+
+								ul{
+									position:absolute;
+									display: inline-block;
+									right:300px;
+									top:120px;
+
+									li{
+										display: block;
+										margin: 0 10px;
+										border:none; 
+										background-color:black;
+										a{
+											color:white;
+											font-size:23px;
+											background-color:black;
+										}
+									}
+								}
+							}
+						}
+					}
+			}
+		}
+		#content{
+			.headline_text_bg{
+				background:url("../img/Mood.jpg") no-repeat center center fixed;
+				-webkit-background-size: cover;
+	  			-moz-background-size: cover;
+	  			-o-background-size: cover;
+	  			background-size: cover;
+	  			min-height: 646px;
+	  				
+	  			.headline_text{
+	  				position:relative;
+	  				@include column(6.5);
+	  				margin-left: 6rem;
+	  				top:20px;
+	  				height:300px;
+	  			
+	  			
+		  				
+	  				h2{
+						color:rgba(255, 255, 255, 1);
+	  					font-size:40px;
+	  					//padding:50 0 20px 50;
+	  					background: rgba(0, 0, 0, 0.5);
+	  					border-radius:10px;
+	  					padding:10px;
+	  					
+	  				}
+	  			}
+	  			.login_main{
+	  				@include column(5.66);
+	  				background-color:white;
+	  				border-radius:10px;
+	  				margin-left: 7rem;
+	  				margin-top:2.3rem;
+				
+	  				
+	  				form{
+						//background-color:green;
+						margin-bottom:-50px;
+					}	
+					.input-std{
+						height:55px;
+						width: 295px;
+						border-radius:10px;
+						padding-bottom:0rem;
+					}
+					.go{
+					position:relative;
+	  				background-color:#33ff66;
+	  				border-radius:10px;	
+	  				padding:15px;
+	  				color:white;
+	  				top:-3.5rem;
+	  				left:39rem;
+	  				clear:both;		
+	  				}
+
+				}
+				
+	  		}
+	  		.puff_add{
+	  			height:235px;
+	  			background-color:black;
+	  			
+	  				
+		  		h3{
+		  		color:white;
+		  		}
+		  		
+	  		}
+	  		.jobb_puffs{
+	  			height:270px;
+	  			background-color:#00cccc;
+	  		}
+		}
+		footer{
+			height:560px;
+			background-color:#333333;
+		}	
+	}
+}
