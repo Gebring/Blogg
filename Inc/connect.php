@@ -15,7 +15,7 @@ if ($mysqli->connect_errno) {
 	echo "Failed to connect" . $mysqli->connect_error . " " . $mysqli-> connect_errno;
 	exit(); //avslutar
 } else {
-	//echo "MEGABAJS";
+	//echo "MEGA";
 }
 
 $stmt = $mysqli->stmt_init();
